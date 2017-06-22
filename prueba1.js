@@ -2,7 +2,7 @@ function buscadorNumeros(){
   var number = 0;
   var n;
   var primo = 0;
-  for(i = 0; i <= 9; i++){
+  for(i = 0; i <= 99; i++){
     number += 1;
     if (number%i == 0){
       console.log(number + " es par");
