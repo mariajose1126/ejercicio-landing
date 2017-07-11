@@ -1,18 +1,21 @@
-function buscadorNumeros(){
-  var number = 0;
-  var n;
-  var primo = 0;
-  for(i = 0; i <= 99; i++){
-    number += 1;
-    if (number%i == 0){
-      console.log(number + " es par");
-    } else if (number%2 != 0){
-      console.log(number + " es impar");
-    }
-  }
-}
+function buscadorNumeros(n) {
+  var contador = 1;
 
-buscadorNumeros();
+  for(i = 1; i < n; i++) {
+	  	if(n%i == 0){
+	  		contador ++;
+	  	}
+  	}
+  	if (contador > 2 && n%2 != 0){
+		console.log(n + " compuesto")
+	} else if (contador == 2){
+		console.log(n + " primo")
+	} else if( n%2 == 0){
+		console.log(n + " par")
+	}
+  }
+
+buscadorNumeros(10);
 
 
 
